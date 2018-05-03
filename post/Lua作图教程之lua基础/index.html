@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="generator" content="Hugo 0.18.1" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My thoughts and rambles">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"/>
+    <link rel="stylesheet" href="/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.grey-orange.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/hmdl-style.css"/>
+
+
+
+    <title>Lua作图教程之lua基础</title>
+</head>
+
+<body style="background-image: url('/images/background.jpg');">
+    <div class="hmdl-body mdl-layout mdl-js-layout has-drawer is-upgraded">        
+        <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/">主页</a>
+                <a class="mdl-navigation__link" href="/post/">文章</a>
+                <a class="mdl-navigation__link" href="/project/">项目</a>
+                <a class="mdl-navigation__link" href="/about/">关于我</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="/">主页</a>
+            <a class="mdl-navigation__link" href="/post/">文章</a>
+            <a class="mdl-navigation__link" href="/project/">项目</a>
+            <a class="mdl-navigation__link" href="/about/">关于我</a>
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content">
+
+            <div class="hmdl-page mdl-grid">
+                <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+                    <div class="hmdl-page-banner mdl-card__media mdl-color-text--grey-50" style="background-image: url('/images/blog/timg%20%284%29.jpg'); background-color:#263238;">
+                        <h3 >Lua作图教程之lua基础</h3>
+                    </div>
+                    <div class="hmdl-page-meta mdl-color-text--grey-700 mdl-card__supporting-text">
+                        <div class="minilogo" style="background-image: url('/images/viosey_logo-blue.png');"></div>
+                        <div>
+                            <strong>Xu Chao</strong>
+                            <span>May 1, 2018</span>
+                        </div>
+                        <div class="section-spacer"></div>
+                    </div>
+                    <div class="hmdl-page-content mdl-color-text--grey-700 mdl-card__supporting-text">
+                        <p>Lua 是一种轻量小巧的脚本语言，用标准C语言编写并以源代码形式开放， 其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。</p>
+
+<p></p>
+
+<h2 id="一-什么是lua">一、什么是Lua？</h2>
+
+<p>Lua 是一个小巧的脚本语言，巴西里约热内卢天主教大学里的一个研究小组于1993年开发，其设计目的是为了嵌入应用程序中，从而为应用程序提供灵活的扩展和定制功能。Lua由标准C编写而成，几乎在所有操作系统和平台上都可以编译，运行。一个完整的Lua解释器不过200k，在目前所有脚本引擎中，Lua的速度是最快的。这一切都决定了Lua是作为嵌入式脚本的最佳选择。相比Python和Per的内核，Lua的内核小于120KB，而Python的内核大约860KB，Perl的内核大约1.1MB。Lua语言支持面向对象编程和函数式编程，它提供了一个通用类型的表table，可以实现数组、哈希表、集合、对象的功能。Lua支持协同进程机制。作为一门可扩展的语言，Lua提供简单而稳定的交互接口，如Lua和C程序可通过一个堆栈交换数据，这使得Lua语言可以快速地和其它语言实现整合。总体来说，Lua语言具备以下优点：(1)语言优美、轻巧  (2)性能优良、速度快  (3)可扩展性强。正因为Lua语言具备了这样的特点，使得它能和游戏开发领域的需求完美地结合起来，因为我们需要这样的一门语言，它能够和C/C++进行完美地交互，因为我们需要它对底层进行封装。它需要足够地简单，因为我们需要简单、灵活、快速地编写代码。那么显然Lua就是我们一直在寻找地这种语言。</p>
+
+<h2 id="二-lua可以做什么">二、Lua可以做什么？</h2>
+
+<p>尽管博主已经告诉了大家太多的关于Lua语言的优秀特性，相信大家仍然会对Lua语言的能力存在怀疑。大家或许会想，Lua到底可以做什么呢？在《Lua游戏开发》一书中作者已经告诉了我们答案：</p>
+
+<p>1、编辑游戏的用户界面</p>
+
+<p>2、定义、存储和管理基础游戏数据</p>
+
+<p>3、管理实时游戏事件</p>
+
+<p>4、创建和维护开发者友好的游戏存储和载入系统</p>
+
+<p>5、编写游戏的人工智能系统</p>
+
+<p>6、创建功能原型，可以之后用高性能语言移植</p>
+
+<p>这时候我们似乎觉得Lua语言在某种程度上就是专门为游戏开发而诞生的，因为它将大量的优秀特性全部指向了游戏开发领域，因此Lua语言走进走进游戏开发领域变得顺利成章，那么，让我们接着往下看吧，Lua在游戏开发领域有那些成熟的案例吧。</p>
+
+<h2 id="三-哪些游戏使用了lua">三、哪些游戏使用了Lua？</h2>
+
+<p>1、魔兽世界</p>
+
+<p>如果提到Lua在游戏领域中第一次崭露头角，我们就不能不说《魔兽世界》这款游戏，由于《魔兽世界》在其客户端中使用了Lua，使得Lua在游戏领域的作用第一次被展示出来，Lua语言因此在游戏开发领域成名。Lua语言的虚拟机很轻巧，可以很容易地嵌入到客户端程序中。如果需要更新客户端，只需要更新脚本程序即可，无需重新编译整个客户端。这样地优点使得Lua在游戏开发领域一战成名，可以说是《魔兽世界》为游戏开发领域带来了这样激动人心的伟大语言，作为Lua在游戏领域攻城略地的尝试，《魔兽世界》功不可没。</p>
+
+<p>2、大话西游2</p>
+
+<p>如果说《魔兽世界》开辟Lua在国外游戏领域地战场，那么网易的《大话西游2》无疑是开启了国内游戏制作公司使用Lua的先河。2002年网易开发《大话西游2》时，决定在客户端内嵌入新的脚本语言，因为当时使用的微软JScript存在较多Bug、维护不便、兼容性差。当时该项目技术负责人云风吸取了《大话西游1》时外挂泛滥的教训，决定选择一个新的语言，这样既能摆脱对JScript的依赖，又能有效地打击外挂制作者，权衡再三，最终选择了Lua 4.0。后来《大话西游2》在市场上取得了成功，国内游戏开发行业纷纷受此影响采用Lua，可以说是网易Lua走进了国内开发者的视野，不过到今天为止，Lua在国内仍然是一门较为小众的语言，从《大话西游2》引领国内开发者将视角转向Lua到今天将近10余年地时间，此中缘由，只有大家自己去想个清楚啦。</p>
+
+<h2 id="四-带你走进lua的世界">四、带你走进Lua的世界</h2>
+
+<p>最后想和大家分享是Lua语言编程的一个简单的示例，因为博主觉得以后做游戏用脚本语言的场景会越来越多，所以能学会一门脚本语言能为你的游戏开发之路增色不少。因为博主刚开始学，所以脚本中有不足之处，希望大家能谅解，在学校的时间一天天地在减少，博主希望能和大家共同度过最后的这段时间。博主使用的是Lua5.2，使用的Sublime Text2作为脚本编辑器配合LuaDev插件进行编程的，如果大家想用懒惰点的办法，可以使用Lua for Windows这个集成环境。好了，下面开始吧，作为第一个Lua程序，我们直接给出代码，具体的语法及API大家可以自己去查阅。</p>
+
+<h4 id="注释">注释</h4>
+
+<p>写一个程序，总是少不了注释的。</p>
+
+<p>在Lua中，你可以使用单行注释和多行注释。</p>
+
+<p>单行注释中，连续两个减号&rdquo;&ndash;&ldquo;表示注释的开始，一直延续到行末为止。相当于C++语言中的&rdquo;//&ldquo;。</p>
+
+<p>多行注释中，由&rdquo;&ndash;[[&ldquo;表示注释开始，并且一直延续到&rdquo;]]&ldquo;为止。这种注释相当于C语言中的&rdquo;/**/&ldquo;。在注释当中，&rdquo;[[&ldquo;和&rdquo;]]&ldquo;是可以嵌套的。</p>
+
+<h4 id="lua-数据类型">Lua 数据类型</h4>
+
+<p>Lua是动态类型语言，变量不要类型定义,只需要为变量赋值。 值可以存储在变量中，作为参数传递或结果返回。</p>
+
+<p>Lua中有8个基本类型分别为：nil、boolean、number、string、userdata、function、thread和table。</p>
+
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>nil</td>
+<td>这个最简单，只有值nil属于该类，表示一个无效值（在条件表达式中相当于false）。</td>
+</tr>
+
+<tr>
+<td>boolean</td>
+<td>包含两个值：false和true。</td>
+</tr>
+
+<tr>
+<td>number</td>
+<td>表示双精度类型的实浮点数</td>
+</tr>
+
+<tr>
+<td>string</td>
+<td>字符串由一对双引号或单引号来表示</td>
+</tr>
+
+<tr>
+<td>function</td>
+<td>由 C 或 Lua 编写的函数</td>
+</tr>
+
+<tr>
+<td>userdata</td>
+<td>表示任意存储在变量中的C数据结构</td>
+</tr>
+
+<tr>
+<td>thread</td>
+<td>表示执行的独立线路，用于执行协同程序</td>
+</tr>
+
+<tr>
+<td>table</td>
+<td>Lua 中的表（table）其实是一个&rdquo;关联数组&rdquo;（associative arrays），数组的索引可以是数字或者是字符串。在 Lua 里，table 的创建是通过&rdquo;构造表达式&rdquo;来完成，最简单构造表达式是{}，用来创建一个空表。</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="lua-变量">Lua 变量</h4>
+
+<p>变量在使用前，必须在代码中进行声明，即创建该变量。</p>
+
+<p>编译程序执行代码之前编译器需要知道如何给语句变量开辟存储区，用于存储变量的值。</p>
+
+<p>Lua 变量有三种类型：全局变量、局部变量、表中的域。</p>
+
+<p>Lua 中的变量全是全局变量，那怕是语句块或是函数里，除非用 local 显式声明为局部变量。</p>
+
+<p>局部变量的作用域为从声明位置开始到所在语句块结束。</p>
+
+<p>变量的默认值均为 nil。</p>
+
+<pre><code class="language-lua">    a = 5               -- 全局变量
+    local b = 5         -- 局部变量
+
+</code></pre>
+
+<h3 id="lua-编程">Lua 编程</h3>
+
+<p>经典的&rdquo;Hello world&rdquo;的程序总是被用来开始介绍一种语言。在Lua中，写一个这样的程序很简单：</p>
+
+<pre><code class="language-lua">    print(&quot;Hello world&quot;)
+</code></pre>
+
+<p>在Lua中，语句之间可以用分号&rdquo;；&rdquo;隔开，也可以用空白隔开。一般来说，如果多个语句写在同一行的话，建议总是用分号隔开。</p>
+
+<p>Lua 有好几种程序控制语句，如：</p>
+
+<p>　　条件控制： if 条件 then … elseif 条件 then … else … end</p>
+
+<p>　　While循环： while 条件 do … end</p>
+
+<p>　　Repeat循环： repeat … until 条件</p>
+
+<p>　　For循环： for 变量 = 初值，终点值，步进 do … end</p>
+
+<p>　　For循环： for 变量1，变量2，… ，变量N in表或枚举函数 do … end</p>
+
+<pre><code>注意一下，for的循环变量总是只作用于for的局部变量，你也可以省略步进值，这时候，for循环会使用1作为步进值。 你可以用break来中止一个循环。
+</code></pre>
+
+<p>如果你有程序设计的基础，比如你学过Basic，C之类的，你会觉得Lua也不难。但Lua有几个地方是明显不同于这些程序设计语言的，所以请特别注意。</p>
+
+<h4 id="语句块">语句块</h4>
+
+<p>语句块在C++中是用&rdquo;{&ldquo;和&rdquo;}&ldquo;括起来的，在Lua中，它是用do 和 end 括起来的。比如：</p>
+
+<pre><code class="language-lua">    do print(&quot;Hello&quot;) end
+</code></pre>
+
+<p>你可以在 函数 中和 语句块 中定局部变量。</p>
+
+<h4 id="赋值语句">赋值语句</h4>
+
+<p>赋值语句在Lua被强化了。它可以同时给多个变量赋值。
+例如：</p>
+
+<pre><code class="language-lua">    a,b,c,d=1,2,3,4
+</code></pre>
+
+<p>甚至是：</p>
+
+<pre><code class="language-lua">    a,b=b,a -- 多么方便的交换变量功能啊。
+</code></pre>
+
+<p>在默认情况下，变量总是认为是全局的。假如你要定义局部变量，则在第一次赋值的时候，需要用local说明。比如：</p>
+
+<pre><code class="language-lua">     local a,b,c = 1,2,3 -- a,b,c都是局部变量
+</code></pre>
+
+<h4 id="循环语句">循环语句</h4>
+
+<p>while 循环：while 条件 do … end</p>
+
+<p>repeat 循环：repeat … until 条件</p>
+
+<p>for 循环：for 变量 = 初值，终点值，步进 do … end</p>
+
+<p>for 循环：for 变量1，变量2，… ，变量N in表或枚举函数 do … end</p>
+
+<pre><code class="language-lua">while:
+
+    my_table = {1,2,3}
+    local index = 1 -- 注意: table 中的索引从1开始
+    while my_table[index] do -- 只要条件返回True,就一直执行循环
+    print(my_table[index])
+    index = index +1 -- Lua中没有i++ 的写法,所以只能用这种写法
+    end
+    -- 输出 1
+    -- 2
+    -- 3
+</code></pre>
+
+<p>repeat:(相当于其他语言中的do&hellip;while)</p>
+
+<pre><code class="language-lua">    local snum = 1 --起始值
+    repeat
+    print(&quot;snum is &quot;..snum)
+    snum = snum + 1
+    until snum == 4 --当snum 等于 4 时 跳出循环
+    --输出:
+    --snum is 1
+    --snum is 2
+    --snum is 3
+</code></pre>
+
+<p>for:</p>
+
+<pre><code class="language-lua">    for i=1,10,2 do -- 这里i=1表示起始值, 10 表示最大值, 2表示步进值(可以没有,默认值为1,也就是其他语言里的i++)
+        print(i)
+    end
+</code></pre>
+
+<p>注意一下，for的循环变量总是只作用于for的局部变量，你也可以省略步进值，这时候，for循环会使用 1 作为步进值。</p>
+
+<p>可以用break来中止一个循环。</p>
+
+<h4 id="数值运算">数值运算</h4>
+
+<p>和C语言一样，支持+, -, *, /。但Lua还多了一个&rdquo;^&ldquo;。这表示指数乘方运算。比如2^3 结果为8, 2^4结果为16。
+连接两个字符串，可以用&rdquo;..&ldquo;运处符。如：</p>
+
+<pre><code class="language-lua">    &quot;This a &quot; .. &quot;string.&quot; -- 等于 &quot;this a string&quot;
+</code></pre>
+
+<h4 id="比较运算">比较运算</h4>
+
+<p>&lt; &gt; &lt;= &gt;= == ~=
+分别表示 小于，大于，不大于，不小于，相等，不相等
+所有这些操作符总是返回 true 或 false。
+对于Table，Function和Userdata类型的数据，只有 == 和 ~=可以用。相等表示两个变量引用的是同一个数据。比如：</p>
+
+<pre><code class="language-lua">    a={1,2}
+    b=a
+    print(a==b, a~=b) -- true, false
+    a={1,2}
+    b={1,2}
+    print(a==b, a~=b) -- false, true
+</code></pre>
+
+<h4 id="逻辑运算">逻辑运算</h4>
+
+<p>and, or, not</p>
+
+<p>其中，and 和 or 与C语言区别特别大。
+在这里，请先记住，在Lua中，只有 false 和 nil 才计算为 false，其它任何数据都计算为 true，0 也是 true！</p>
+
+<p>　　and 和 or 的运算结果不是 true和false，而是和它的两个操作数相关。</p>
+
+<p>　　a and b： 如果a为false，则返回a；否则返回b</p>
+
+<p>　　a or b： 如果 a 为true，则返回a；否则返回b</p>
+
+<p>举几个例子：</p>
+
+<pre><code class="language-lua">    print(4 and 5) --&gt; 5
+    print(nil and 13) --&gt; nil
+    print(false and 13) --&gt; false
+    print(4 or 5) --&gt; 4
+    print(false or 5) --&gt; 5
+</code></pre>
+
+<p>在Lua中这是很有用的特性，也是比较令人混洧的特性。
+我们可以模拟C语言中的语句：</p>
+
+<pre><code class="language-lua">    x = a? b : c
+</code></pre>
+
+<p>在Lua中，可以写成：</p>
+
+<pre><code class="language-lua">    x = a and b or c
+</code></pre>
+
+<p>最有用的语句是：</p>
+
+<pre><code class="language-lua">    x = x or v
+</code></pre>
+
+<p>它相当于：</p>
+
+<pre><code class="language-lua">    if not x then x = v end
+</code></pre>
+
+<h4 id="table">Table</h4>
+
+<p>关系表类型，这是一个很强大的类型。我们可以把这个类型看作是一个数组。只是C语言的数组，只能用正整数来作索引；在Lua中，你可以用任意类型来作数组的索引，除了nil。同样，在C语言中，数组的内容只允许一种类型；在Lua中，你也可以用任意类型的值来作数组的内容，除了nil。</p>
+
+<p>Table的定义很简单，它的主要特征是用&rdquo;{&ldquo;和&rdquo;}&ldquo;来括起一系列数据元素的。比如：</p>
+
+<pre><code class="language-lua">    T1 = {} -- 定义一个空表
+    T1[1]=10 -- 然后我们就可以象C语言一样来使用它了。
+    T1[&quot;John&quot;]={Age=27, Gender=&quot;Male&quot;}
+</code></pre>
+
+<p>这一句相当于：</p>
+
+<pre><code class="language-lua">    T1[&quot;John&quot;]={} -- 必须先定义成一个表，还记得未定义的变量是nil类型吗
+    T1[&quot;John&quot;][&quot;Age&quot;]=27
+    T1[&quot;John&quot;][&quot;Gender&quot;]=&quot;Male&quot; 
+</code></pre>
+
+<p>当表的索引是字符串的时候，我们可以简写成：</p>
+
+<pre><code class="language-lua">    T1.John={}
+    T1.John.Age=27
+    T1.John.Gender=&quot;Male&quot;
+</code></pre>
+
+<p>或</p>
+
+<pre><code class="language-lua">    T1.John{Age=27, Gender=&quot;Male&quot;} 
+</code></pre>
+
+<p>这是一个很强的特性。
+在定义表的时候，我们可以把所有的数据内容一起写在&rdquo;{&ldquo;和&rdquo;}&ldquo;之间，这样子是非常方便，而且很好看。比如，前面的T1的定义，我们可以这么写：</p>
+
+<pre><code class="language-lua">    T1=
+    　　{
+        10, -- 相当于 [1] = 10
+        [100] = 40,
+        John= -- 如果你原意，你还可以写成：[&quot;John&quot;] =
+        {
+        Age=27, -- 如果你原意，你还可以写成：[&quot;Age&quot;] =27
+        Gender=Male -- 如果你原意，你还可以写成：[&quot;Gender&quot;] =Male
+        },
+        20 -- 相当于 [2] = 20
+    }
+</code></pre>
+
+<p>看起来很漂亮，不是吗？我们在写的时候，需要注意三点：</p>
+
+<p>　　第一，所有元素之间，总是用逗号&rdquo;，&rdquo;隔开；</p>
+
+<p>　　第二，所有索引值都需要用&rdquo;[&ldquo;和&rdquo;]&ldquo;括起来；如果是字符串，还可以去掉引号和中括号；</p>
+
+<p>　　第三，如果不写索引，则索引就会被认为是数字，并按顺序自动从1往后编；</p>
+
+<p>　　表类型的构造是如此的方便，以致于常常被人用来代替配置文件。是的，不用怀疑，它比ini文件要漂亮，并且强大的多。</p>
+
+<h4 id="lua-函数">Lua 函数</h4>
+
+<p>在Lua中，函数是对语句和表达式进行抽象的主要方法。既可以用来处理一些特殊的工作，也可以用来计算一些值。</p>
+
+<p>Lua 提供了许多的内建函数，你可以很方便的在程序中调用它们，如print()函数可以将传入的参数打印在控制台上。</p>
+
+<p>Lua 函数主要有两种用途：</p>
+
+<p>1.完成指定的任务，这种情况下函数作为调用语句使用；</p>
+
+<p>2.计算并返回值，这种情况下函数作为赋值语句的表达式使用。</p>
+
+<p>函数，在Lua中，函数的定义也很简单。典型的定义如下：</p>
+
+<pre><code class="language-lua">    function add(a,b) -- add 是函数名字，a和b是参数名字
+        return a+b -- return 用来返回函数的运行结果
+    end 
+</code></pre>
+
+<p>请注意，return语言一定要写在end之前。假如你非要在中间放上一句return，那么请写成：do return end。
+还记得前面说过，函数也是变量类型吗？上面的函数定义，其实相当于：</p>
+
+<pre><code class="language-lua">    add = function (a,b) return a+b end 
+</code></pre>
+
+<p>当你重新给add赋值时，它就不再表示这个函数了。你甚至可以赋给add任意数据，包括nil （这样，你就清除了add变量）。Function是不是很象C语言的函数指针呢？
+和C语言一样，Lua的函数可以接受可变参数个数，它同样是用&rdquo;…&rdquo;来定义的，比如：</p>
+
+<pre><code class="language-lua">    function sum (a,b,…)
+</code></pre>
+
+<p>如果想取得…所代表的参数，可以在函数中访问arg局部变量（表类型）得到。如</p>
+
+<pre><code class="language-lua">    sum(1,2,3,4)
+</code></pre>
+
+<p>则，在函数中，</p>
+
+<pre><code class="language-lua">    a = 1, b = 2, arg = {3, 4}
+</code></pre>
+
+<p>更可贵的是，它可以同时返回多个结果，比如：</p>
+
+<pre><code class="language-lua">    function s()
+    　　return 1,2,3,4
+    end
+    a,b,c,d = s() -- 此时，a = 1, b = 2, c = 3, d = 4
+</code></pre>
+
+<p>前面说过，表类型可以拥有任意类型的值，包括函数！因此，有一个很强大的特性是，拥有函数的表，哦，我想更恰当的应该说是对象吧。Lua可以使用面向对象编程了。不信？那我举例如下：</p>
+
+<pre><code class="language-lua">    t = {
+    　　　　 Age = 27
+    　　　　 add = function(self, n) self.Age = self.Age+n end
+    　　}
+    　　print(t.Age) -- 27
+    　　t.add(t, 10)
+    　　print(t.Age) -- 37
+</code></pre>
+
+<p>不过，t.add(t,10) 这一句实在是有点土对吧？没关系，在Lua中，你可以简写成：</p>
+
+<pre><code class="language-lua">t:add(10) -- 相当于 t.add(t,10)
+</code></pre>
+
+<h5 id="实例">实例</h5>
+
+<p>以下实例定义了函数 max()，参数为 num1, num2，用于比较两值的大小，并返回最大值：</p>
+
+<pre><code class="language-lua">    --[[ 函数返回两个值的最大值 --]]
+    function max(num1, num2)
+    
+       if (num1 &gt; num2) then
+          result = num1;
+       else
+          result = num2;
+       end
+
+       return result; 
+    end
+    -- 调用函数
+    print(&quot;两值比较最大值为 &quot;,max(10,4))
+    print(&quot;两值比较最大值为 &quot;,max(5,6))
+</code></pre>
+
+<p>以上代码执行结果为：</p>
+
+<pre><code>两值比较最大值为     10
+两值比较最大值为     6
+</code></pre>
+                    </div>
+                    <div class="hmdl-page-comments mdl-color-text--primary-contrast mdl-card__supporting-text comments"> 
+                        <a href=http://goblinlaboratory.win/Blog/>Xu Chao</a>
+                        <p>Writer of stuff</p>
+                    </div>  
+                </div>                
+                <nav class="mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+                    <a href="/post/%E5%A5%87%E5%B9%BB%E6%95%85%E4%BA%8B%E9%87%8C%E7%9A%84%E2%80%9C%E6%B3%95%E5%8A%9B%E8%80%85%E4%BB%AC%E2%80%9D/">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                        <i class="icon ion-android-arrow-back"></i>
+                        </button>
+                        Older
+                    </a>
+                    <div class="section-spacer"></div>
+                    <a href="/post/Lua%E4%BD%9C%E5%9B%BE%E6%95%99%E7%A8%8B%E4%B9%8B%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        Newer
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                            <i class="icon ion-android-arrow-forward"></i>
+                        </button>
+                    </a>
+                </nav>
+ 
+            </div>        
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer--left-section">                
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-mini-footer--social-btn social-btn" href="mailto:olossss@qq.com?subject=Hi">
+                    <i class="material-icons_lg icon ion-email"></i>
+                    <span class="visuallyhidden">Email</span>
+                </a>
+
+            </div>
+            <div class="mdl-mini-footer--right-section">
+                <span>© 2015 徐超</span>
+            </div>
+        </footer>
+        <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+
+</body>
+</html>
+
