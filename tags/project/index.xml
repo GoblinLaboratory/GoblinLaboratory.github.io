@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project on 徐超Blog</title>
-    <link>http://goblinlaboratory.win/tags/project/index.xml</link>
+    <link>http://goblinlaboratory.win/tags/project/</link>
     <description>Recent content in Project on 徐超Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://goblinlaboratory.win/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Oct 2017 02:27:08 +0000</lastBuildDate>
+    
+	<atom:link href="http://goblinlaboratory.win/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>北京管庄绿隔产业园</title>
@@ -14,26 +17,10 @@
       <pubDate>Thu, 05 Oct 2017 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E5%8C%97%E4%BA%AC%E7%AE%A1%E5%BA%84%E7%BB%BF%E9%9A%94%E4%BA%A7%E4%B8%9A%E5%9B%AD/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;北京官庄双桥东路&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;绿隔产业园&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/guanzhuang.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;。。。奇葩的操盘公司。&lt;/p&gt;
-
-&lt;h3 id=&#34;最新进展&#34;&gt;最新进展&lt;/h3&gt;
-
-&lt;p&gt;已经和大股东达成一致，把那个奇葩的操盘公司踢出去了。&lt;/p&gt;
-</description>
+      <description>项目位置 北京官庄双桥东路
+项目类型 绿隔产业园
+工作总结 。。。奇葩的操盘公司。
+最新进展 已经和大股东达成一致，把那个奇葩的操盘公司踢出去了。</description>
     </item>
     
     <item>
@@ -42,22 +29,9 @@
       <pubDate>Thu, 05 Oct 2017 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E5%90%88%E8%82%A5%E5%9B%BA%E9%95%87%E8%B7%AF%E4%B8%8E%E9%BB%84%E6%A1%82%E8%B7%AF%E4%BA%A4%E5%8F%A3%E5%9C%B0%E5%9D%97/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;项目地块位于合肥市固镇路与黄桂路交口处&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;金融产业园&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/guzhenlu.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;三天从无到有.&lt;/p&gt;
-</description>
+      <description>项目位置 项目地块位于合肥市固镇路与黄桂路交口处
+项目类型 金融产业园
+工作总结 三天从无到有.</description>
     </item>
     
     <item>
@@ -66,22 +40,9 @@
       <pubDate>Wed, 05 Mar 2014 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E9%B8%A1%E8%A5%BF%E5%85%B4%E5%87%AF%E6%B9%96%E7%99%BD%E9%B1%BC%E6%B9%BE%E8%A7%84%E5%88%92/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;黑龙江鸡西兴凯湖白鱼湾&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;旅游区规划&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/xkh.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;。。。文本套路，总图套路，一切都是套路。&lt;/p&gt;
-</description>
+      <description>项目位置 黑龙江鸡西兴凯湖白鱼湾
+项目类型 旅游区规划
+工作总结 。。。文本套路，总图套路，一切都是套路。</description>
     </item>
     
     <item>
@@ -90,24 +51,9 @@
       <pubDate>Tue, 05 Mar 2013 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E5%A4%A7%E7%90%86%E6%B4%B1%E6%B5%B7%E7%94%9F%E6%80%81%E5%9B%AD/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;大理&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;概念方案&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/dl.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/dl1.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;lumion小成。&lt;/p&gt;
-</description>
+      <description>项目位置 大理
+项目类型 概念方案
+工作总结 lumion小成。</description>
     </item>
     
     <item>
@@ -116,18 +62,8 @@
       <pubDate>Tue, 05 Mar 2013 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E5%B9%BF%E4%B8%9C%E7%95%AA%E7%A6%BA%E4%B8%87%E8%BE%BE/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;广东&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;商业综合体&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/pywd.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-</description>
+      <description>项目位置 广东
+项目类型 商业综合体</description>
     </item>
     
     <item>
@@ -136,24 +72,9 @@
       <pubDate>Tue, 05 Mar 2013 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E6%9B%B2%E9%9D%96%E4%B8%80%E4%B8%AD/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;云南曲靖&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;学校规划方案&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/qj1z.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/qj1z1.png&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;。。。第一次用lumion出图。&lt;/p&gt;
-</description>
+      <description>项目位置 云南曲靖
+项目类型 学校规划方案
+工作总结 。。。第一次用lumion出图。</description>
     </item>
     
     <item>
@@ -162,22 +83,9 @@
       <pubDate>Tue, 05 Mar 2013 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E6%9D%AD%E5%B7%9E%E6%8B%B1%E5%A2%85%E4%B8%87%E8%BE%BE/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;杭州&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;商业综合体&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/hzwd.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;第一次和老外合作。&lt;/p&gt;
-</description>
+      <description>项目位置 杭州
+项目类型 商业综合体
+工作总结 第一次和老外合作。</description>
     </item>
     
     <item>
@@ -186,22 +94,9 @@
       <pubDate>Tue, 05 Mar 2013 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E8%A5%BF%E5%AE%81%E6%B5%B7%E6%B9%96%E4%B8%87%E8%BE%BE/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;西宁&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;商业综合体&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/xnwd.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;第一次独立完成方案创作。&lt;/p&gt;
-</description>
+      <description>项目位置 西宁
+项目类型 商业综合体
+工作总结 第一次独立完成方案创作。</description>
     </item>
     
     <item>
@@ -210,22 +105,9 @@
       <pubDate>Tue, 05 Mar 2013 02:27:08 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/project/%E6%BD%AD%E6%8B%93%E5%AF%BA/</guid>
-      <description>
-
-&lt;h3 id=&#34;项目位置&#34;&gt;项目位置&lt;/h3&gt;
-
-&lt;p&gt;谭拓寺&lt;/p&gt;
-
-&lt;h3 id=&#34;项目类型&#34;&gt;项目类型&lt;/h3&gt;
-
-&lt;p&gt;住宅方案&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://goblinlaboratory.win/images/Project/tts.jpg&#34; alt=&#34;my img&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;工作总结&#34;&gt;工作总结&lt;/h3&gt;
-
-&lt;p&gt;。。。户型改了20遍啊。&lt;/p&gt;
-</description>
+      <description>项目位置 谭拓寺
+项目类型 住宅方案
+工作总结 。。。户型改了20遍啊。</description>
     </item>
     
   </channel>

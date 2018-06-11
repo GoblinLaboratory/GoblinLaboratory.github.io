@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bio on 徐超Blog</title>
-    <link>http://goblinlaboratory.win/categories/bio/index.xml</link>
+    <link>http://goblinlaboratory.win/categories/bio/</link>
     <description>Recent content in Bio on 徐超Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://goblinlaboratory.win/categories/bio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://goblinlaboratory.win/categories/bio/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>About Me</title>
@@ -14,28 +17,12 @@
       <pubDate>Tue, 18 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>http://goblinlaboratory.win/about/</guid>
-      <description>
-
-&lt;p&gt;高山流水心自知，所谓尾蜕大难求净土，伤心最是近高楼，余是也。茕茕孑立，形影相吊，余心之悲，何人可诉。圣人言:文武之道，未坠于地，在人，贤者识其大者，不贤者识其小者。庾信平生最萧瑟 ，暮年诗赋动江关，精一之功，超入圣域，乃大中至正之归矣。我辈当处困养静，养吾浩然之气。&lt;/p&gt;
-
-&lt;h4 id=&#34;工作经历&#34;&gt;工作经历&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;2011年2月 - 2012年1月 - 美国普赛建筑顾问有限公司&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2011年6月 - 2013年9月 - 上海鼎世建筑设计顾问有限公司(北京分公司)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2013年10月 - 2015年10月 - CDG国际设计机构&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2016年4月 - 至今 - 北京清华同衡规划研设计究院有限公司&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;毕业学校&#34;&gt;毕业学校&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;同济大学&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> 追求简单设计，厌恶复杂性，复杂的设计，是罪恶的根源，难实现，难维护，看不懂。。。
+工作经历  2011年2月 - 2012年1月 - 美国普赛建筑顾问有限公司
+ 2011年6月 - 2013年9月 - 上海鼎世建筑设计顾问有限公司(北京分公司)
+ 2013年10月 - 2015年10月 - CDG国际设计机构
+ 2016年4月 - 至今 - 北京清华同衡规划研设计究院有限公司
+  毕业学校  同济大学  </description>
     </item>
     
   </channel>
