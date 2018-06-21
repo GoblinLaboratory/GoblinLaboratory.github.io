@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    徐超的博客
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Xu Chao</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Architecture/">Architecture</a></li><li><a class="category-link" href="/categories/Game/">Game</a></li><li><a class="category-link" href="/categories/life/">life</a></li><li><a class="category-link" href="/categories/编程/">编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="开源项目">
+		                开源项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="建筑项目">
+		                建筑项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(http://a4.mzstatic.com/us/r30/Purple3/v4/e5/a5/b8/e5a5b843-5cc9-135f-cbba-9a905597d27e/pr_source.175x175-75.png?downloadKey=1418984844_a21422c0567186cb62e73ebdabf81753);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >C#中哈希表(HashTable)的用法详解</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="1-哈希表-HashTable-简述"><a href="#1-哈希表-HashTable-简述" class="headerlink" title="1.  哈希表(HashTable)简述"></a>1.  哈希表(HashTable)简述</h2><p>在.NET Framework中，Hashtable是System.Collections命名空间提供的一个容器，用于处理和表现类似keyvalue的键值对，其中key通常可用来快速查找，同时key是区分大小写；value用于存储对应于key的值。Hashtable中keyvalue键值对均为object类型，所以Hashtable可以支持任何类型的keyvalue键值对.</p>
+<a id="more"></a>
+<h2 id="2-什么情况下使用哈希表"><a href="#2-什么情况下使用哈希表" class="headerlink" title="2.什么情况下使用哈希表"></a>2.什么情况下使用哈希表</h2><ol>
+<li>某些数据会被高频率查询</li>
+<li>数据量大</li>
+<li>查询字段包含字符串类型</li>
+<li>数据类型不唯一</li>
+</ol>
+<h2 id="3-哈希表的使用方法"><a href="#3-哈希表的使用方法" class="headerlink" title="3.哈希表的使用方法"></a>3.哈希表的使用方法</h2><p>哈希表需要使用的namespace</p>
+<pre class=" language-c#"><code class="language-c#">using System.Collections;
+using System.Collections.Generic;
+</code></pre>
+<p>哈希表的基本操作：</p>
+<pre class=" language-c#"><code class="language-c#">//添加一个keyvalue键值对：
+HashtableObject.Add(key,value);
+
+//移除某个keyvalue键值对：
+HashtableObject.Remove(key);
+
+//移除所有元素：           
+HashtableObject.Clear(); 
+
+// 判断是否包含特定键key：
+HashtableObject.Contains(key);
+</code></pre>
+<p>控制台程序例子：</p>
+<pre class=" language-c#"><code class="language-c#">using System;
+using System.Collections; //file使用Hashtable时，必须引入这个命名空间
+class Program
+{
+  public static void Main()
+  {
+     Hashtable ht = new Hashtable(); //创建一个Hashtable实例
+     ht.Add("北京", "帝都"); //添加keyvalue键值对
+     ht.Add("上海", "魔都");
+     ht.Add("广州", "省会");
+     ht.Add("深圳", "特区");
+
+     string capital = (string)ht["北京"];
+     Console.WriteLine(ht.Contains("上海")); //判断哈希表是否包含特定键,其返回值为true或false
+     ht.Remove("深圳"); //移除一个keyvalue键值对
+     ht.Clear(); //移除所有元素
+  }
+}     
+</code></pre>
+<p>哈希表中使用多种数据类型的例子：</p>
+<pre class=" language-c#"><code class="language-c#">using System;
+using System.Collections;
+
+class Program
+{
+    static Hashtable GetHashtable()
+    {
+    　　Hashtable hashtable = new Hashtable();
+　　　　
+    　　hashtable.Add("名字", "小丽");
+    　　hashtable.Add("年龄", 22);
+    　　return hashtable;
+    }
+
+    static void Main()
+    {
+    　　Hashtable hashtable = GetHashtable();
+
+    　　string name = (string)hashtable["名字"];
+    　　Console.WriteLine(name);
+
+    　　int age = (int)hashtable["年龄"];
+    　　Console.WriteLine(age);
+    }
+}
+</code></pre>
+<p>当获取哈希表中数据时，如果类型声明的不对，会出现InvalidCastException错误。使用as-statements可以避免该错误。</p>
+<pre class=" language-c#"><code class="language-c#">using System;
+using System.Collections;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+    Hashtable hashtable = new Hashtable();
+    hashtable.Add(100, "西安");
+
+    // 能转换成功
+    string value = hashtable[100] as string;
+    if (value != null)
+    {
+        Console.WriteLine(value);
+    }
+
+    // 转换失败，获取的值为null，但不会抛出错误。
+    StreamReader reader = hashtable[100] as StreamReader;
+
+    if (reader == null)
+    {
+         Console.WriteLine("西安不是StreamReader型");
+    }
+
+    // 也可以直接获取object值，再做判断
+    object value2 = hashtable[100];
+    if (value2 is string)
+    {
+        Console.Write("这个是字符串型: ");
+        Console.WriteLine(value2);
+    }
+    }
+}
+</code></pre>
+<h2 id="4-遍历哈希表"><a href="#4-遍历哈希表" class="headerlink" title="4.遍历哈希表"></a>4.遍历哈希表</h2><p>遍历哈希表需要用到DictionaryEntry Object，代码如下：</p>
+<pre class=" language-c#"><code class="language-c#">for(DictionaryEntry de in ht) //ht为一个Hashtable实例
+{
+   Console.WriteLine(de.Key);  //de.Key对应于keyvalue键值对key
+   Console.WriteLine(de.Value);  //de.Key对应于keyvalue键值对value
+}
+</code></pre>
+<p>遍历键</p>
+<pre class=" language-c#"><code class="language-c#">foreach (int key in hashtable.Keys)
+{
+    Console.WriteLine(key);
+}
+</code></pre>
+<p>遍历值</p>
+<pre class=" language-c#"><code class="language-c#">foreach (string value in hashtable.Values)
+{
+    Console.WriteLine(value);
+}
+</code></pre>
+<h2 id="5-对哈希表进行排序"><a href="#5-对哈希表进行排序" class="headerlink" title="5.对哈希表进行排序"></a>5.对哈希表进行排序</h2><p> 对哈希表按key值重新排列的做法：</p>
+<pre class=" language-c#"><code class="language-c#">ArrayList akeys=new ArrayList(ht.Keys); 
+akeys.Sort(); //按字母顺序进行排序
+foreach(string key in akeys)
+{
+   Console.WriteLine(key + ": " + ht[key]);  //排序后输出
+}
+</code></pre>
+<h2 id="6-哈希表的效率"><a href="#6-哈希表的效率" class="headerlink" title="6.哈希表的效率"></a>6.哈希表的效率</h2><p>System.Collections下的哈希表（Hashtable）和System.Collections.Generic下的字典（Dictionary）都可用作lookup table，下面比较一下二者的执行效率。</p>
+<pre class=" language-c#"><code class="language-c#">Stopwatch sw = new Stopwatch();
+Hashtable hashtable = new Hashtable();
+Dictionary<string, int> dictionary = new Dictionary<string, int>();
+int countNum = 1000000;
+
+sw.Start();
+for (int i = 0; i < countNum; i++)
+{
+    hashtable.Add(i.ToString(), i);
+}
+sw.Stop();
+Console.WriteLine(sw.ElapsedMilliseconds);  //输出: 744
+
+sw.Restart();
+for (int i = 0; i < countNum; i++)
+{
+    dictionary.Add(i.ToString(), i);
+}
+sw.Stop();
+Console.WriteLine(sw.ElapsedMilliseconds);  //输出: 489
+
+sw.Restart();
+for (int i = 0; i < countNum; i++)
+{
+    hashtable.ContainsKey(i.ToString());
+}
+sw.Stop();
+Console.WriteLine(sw.ElapsedMilliseconds);  //输出: 245
+
+sw.Restart();
+for (int i = 0; i < countNum; i++)
+{
+    dictionary.ContainsKey(i.ToString());
+}
+sw.Stop();
+Console.WriteLine(sw.ElapsedMilliseconds);  //输出: 192
+</code></pre>
+<p>由此可见，添加数据时Hashtable快。频繁调用数据时Dictionary快。</p>
+<p>结论：Dictionary&lt;K,V&gt;是泛型的，当K或V是值类型时，其速度远远超过Hashtable。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://goblinlaboratory.win/2016/05/27/哈希表(HashTable)的用法详解/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://goblinlaboratory.win/2016/05/27/哈希表(HashTable)的用法详解/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

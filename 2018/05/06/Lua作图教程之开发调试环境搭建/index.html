@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    徐超的博客
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Xu Chao</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Architecture/">Architecture</a></li><li><a class="category-link" href="/categories/Game/">Game</a></li><li><a class="category-link" href="/categories/life/">life</a></li><li><a class="category-link" href="/categories/编程/">编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="开源项目">
+		                开源项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="建筑项目">
+		                建筑项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=829145208,2259923787&amp;fm=27&amp;gp=0.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Lua作图教程之开发调试环境搭建</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>5.1 以后就没有很好的lua IDE可用了，luastudio不错但是小贵，发现有位仁兄写了个 visual studio code的lua调试插件，试了一下还不错 <a href="https://github.com/actboy168/vscode-lua-debug" target="_blank" rel="noopener">插件源码</a>.</p>
+<a id="more"></a>
+<h4 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h4><ul>
+<li><p>去微软官方下载vscode <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">软件下载地址</a>.</p>
+</li>
+<li><p>安装Lua 5.3 Debug 插件，在vscode中按Ctrl+P，输入 ext install lua-debug </p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdn.net/20161104010436388" alt=""></p>
+<ul>
+<li>vscode的调试需要在一个文件夹中，随便建一个文件夹比如叫luaproject 里面建一个lua文件叫run.lua</li>
+<li><p>配置调试工具 </p>
+<p>  打开lua的调试配置 </p>
+</li>
+</ul>
+<p><img src="https://img-blog.csdn.net/20161104010854688" alt=""></p>
+<p><img src="https://img-blog.csdn.net/20161104010908407" alt=""></p>
+<p>直接调试lua文件修改lanuce里面的program项</p>
+<pre class=" language-json"><code class="language-json">    <span class="token punctuation">{</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.2.0"</span><span class="token punctuation">,</span>
+    <span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"lua"</span><span class="token punctuation">,</span>
+            <span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"launch"</span><span class="token punctuation">,</span>
+            <span class="token property">"stopOnEntry"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"program"</span><span class="token operator">:</span> <span class="token string">"${workspaceRoot}/run.lua"</span><span class="token punctuation">,</span>
+            <span class="token property">"cwd"</span><span class="token operator">:</span> <span class="token string">"${workspaceRoot}"</span><span class="token punctuation">,</span>
+            <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"${workspaceRoot}/?.lua"</span><span class="token punctuation">,</span>
+            <span class="token property">"cpath"</span><span class="token operator">:</span> <span class="token string">"${workspaceRoot}/?.dll"</span><span class="token punctuation">,</span>
+            <span class="token property">"arg"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"console"</span><span class="token operator">:</span> <span class="token string">"ansi"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"attach"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"lua"</span><span class="token punctuation">,</span>
+            <span class="token property">"request"</span><span class="token operator">:</span> <span class="token string">"attach"</span><span class="token punctuation">,</span>
+            <span class="token property">"stopOnEntry"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"ip"</span><span class="token operator">:</span> <span class="token string">"localhost"</span><span class="token punctuation">,</span>
+            <span class="token property">"port"</span><span class="token operator">:</span> <span class="token number">4278</span><span class="token punctuation">,</span>
+            <span class="token property">"sourceMaps"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">[</span>
+                    <span class="token string">"./"</span><span class="token punctuation">,</span>
+                    <span class="token string">"${workspaceRoot}"</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><img src="https://img-blog.csdn.net/20161104011657300" alt=""></p>
+<ul>
+<li>开始调试 </li>
+</ul>
+<p>如果”stopOnEntry”: true 则进入调试状态便断在开头 按F5直接运行到打断点的地方。可以方便的查看这个变量的值和运行状态 </p>
+<p><img src="https://img-blog.csdn.net/20161104011855937" alt=""></p>
+<h3 id="lua调试器详细说明"><a href="#lua调试器详细说明" class="headerlink" title="lua调试器详细说明"></a>lua调试器详细说明</h3><h5 id="模块功能"><a href="#模块功能" class="headerlink" title="模块功能"></a>模块功能</h5><p>vscode-debug-client.exe 代理客户端。在launch模式中，vscode-debug-client.exe会用vscode-debug.dll创建一个调试器进行调试。</p>
+<p>在attach模式中，vscode-debug-client.exe会连接一个远程的调试器(也是由vscode-debug.dll创建的)，vscode-debug-client.exe只负责在vscode-debug.dll和vscode之间转发消息。</p>
+<p>vscode-debug.dll 调试器的核心模块。你可以在你的程序中加载vscode-debug.dll并创建调试器，这样vscode就可以通过attach模式进行调试。</p>
+<p>luacore.dll lua核心模块。如果你的程序定制了lua，你可以替换掉它。</p>
+<h3 id="配置launch-json"><a href="#配置launch-json" class="headerlink" title="配置launch.json"></a>配置launch.json</h3><h5 id="launch模式，等同于使用lua-exe来执行你的代码。"><a href="#launch模式，等同于使用lua-exe来执行你的代码。" class="headerlink" title="launch模式，等同于使用lua.exe来执行你的代码。"></a>launch模式，等同于使用lua.exe来执行你的代码。</h5><p>program，lua.exe执行的入口文件</p>
+<p>cwd，lua.exe的当前目录</p>
+<p>stopOnEntry，开始调试时是否先暂停</p>
+<p>luadll，指定lua dll的路径，如有不填会加载luacore.dll</p>
+<p>path，用于初始化package.path</p>
+<p>cpath，用于初始化package.cpath</p>
+<p>arg，lua.exe的命令行参数，用于初始化arg</p>
+<p>console，lua的标准输出的编码，可选择utf8、ansi、none，当是none时不会重定向标准输出到vscode</p>
+<p>sourceMaps，一般不需要，作用同attach模式</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://goblinlaboratory.win/2018/05/06/Lua作图教程之开发调试环境搭建/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://goblinlaboratory.win/2018/05/06/Lua作图教程之开发调试环境搭建/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

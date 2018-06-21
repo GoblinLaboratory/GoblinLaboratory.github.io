@@ -1,141 +1,287 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-    <meta name="generator" content="Hugo 0.41" />
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="My thoughts and rambles">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    徐超的博客
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
     
-    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
 
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
     
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-    
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
-    
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"/>
-    <link rel="stylesheet" href="/css/ionicons.min.css"/>
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.grey-orange.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/css/hmdl-style.css"/>
+		
+<!-- Layouts -->
 
 
 
-    <title>About Me</title>
-</head>
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Xu Chao</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Architecture/">Architecture</a></li><li><a class="category-link" href="/categories/Game/">Game</a></li><li><a class="category-link" href="/categories/life/">life</a></li><li><a class="category-link" href="/categories/编程/">编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="开源项目">
+		                开源项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="建筑项目">
+		                建筑项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
 
-<body style="background-image: url('/images/bg/timg%20%283%29.jpg');">
-    <div class="hmdl-body mdl-layout mdl-js-layout has-drawer is-upgraded">        
-        <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll">
-            <div class="mdl-layout__header-row">
-                <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="/">主页</a>
-                <a class="mdl-navigation__link" href="/post/">文章</a>
-                <a class="mdl-navigation__link" href="/project/">项目</a>
-                <a class="mdl-navigation__link mdl-color-text--accent" href="/about/">关于我</a>
-                </nav>
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1529556912378&amp;di=8b36a67f0ede6fe767d9b74166f05885&amp;imgtype=0&amp;src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F33%2F04%2F54Y58PICKgn_1024.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >简历</h2></a>
             </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="/">主页</a>
-            <a class="mdl-navigation__link" href="/post/">文章</a>
-            <a class="mdl-navigation__link" href="/project/">项目</a>
-            <a class="mdl-navigation__link mdl-color-text--accent" href="/about/">关于我</a>
-            </nav>
-        </div>
-
-        <main class="mdl-layout__content">
-
-            <div class="hmdl-page hmdl-about mdl-grid">
-                <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-                    <div id="hmdl-about-media" class="hmdl-page-banner mdl-card__media about-media" style="background-image: url('/images/background-original.jpg'); background-color:#263238;">
-                        <div class="profile-pic-container">
-                            <div class="profilepic" style="background-image: url('/images/avatar3.jpg');"></div>
-                        </div>
-                    </div>
-
-                    <div id="hmdl-about-text" class="hmdl-page-content mdl-color-text--grey-700 mdl-card__supporting-text">
-                        <h3>徐超</h3>
-                        <h6>信奉“勤能补拙”的建筑汪</h6>
-                        <div>
-                                
-
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>My Name is 徐超</p>
+<p>男 1986年 出生于内蒙古</p>
 <p>追求简单设计，厌恶复杂性，复杂的设计，是罪恶的根源，难实现，难维护，看不懂。。。</p>
-
-<h4 id="工作经历">工作经历</h4>
-
+<h3 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h3><h5 id="2011年2月-2012年1月-美国普赛建筑顾问有限公司"><a href="#2011年2月-2012年1月-美国普赛建筑顾问有限公司" class="headerlink" title="2011年2月 - 2012年1月 - 美国普赛建筑顾问有限公司"></a>2011年2月 - 2012年1月 - 美国普赛建筑顾问有限公司</h5><p>职位：助理建筑师</p>
 <ul>
-<li><p>2011年2月 - 2012年1月 - 美国普赛建筑顾问有限公司</p></li>
-
-<li><p>2011年6月 - 2013年9月 - 上海鼎世建筑设计顾问有限公司(北京分公司)</p></li>
-
-<li><p>2013年10月 - 2015年10月 - CDG国际设计机构</p></li>
-
-<li><p>2016年4月 - 至今 - 北京清华同衡规划研设计究院有限公司</p></li>
+<li><p>从事于建筑方案设计（主要为红星美凯龙），城市综合体设计，规划设计（主要为社会主义新农村建设的农村改造项目）。</p>
+</li>
+<li><p>参与项目：盘锦红星美凯龙扩初阶段图纸，济南红星方案，苏州-红星美凯龙方案，章丘市中心商贸区综合体方案，长兴红星创业基地方案，崇明红星美凯龙方案，德州家居建材总部产业园设计方案，唐山·丰润区万国建材博览中心项目规划设计方案。</p>
+</li>
+</ul>
+<h5 id="2011年6月-2013年9月-上海鼎世建筑设计顾问有限公司-北京分公司"><a href="#2011年6月-2013年9月-上海鼎世建筑设计顾问有限公司-北京分公司" class="headerlink" title="2011年6月 - 2013年9月 - 上海鼎世建筑设计顾问有限公司(北京分公司)"></a>2011年6月 - 2013年9月 - 上海鼎世建筑设计顾问有限公司(北京分公司)</h5><p>职位：助理建筑师</p>
+<ul>
+<li><p>主要负责万达外立面方案，扩出阶段工作。 建筑方案设计。</p>
+</li>
+<li><p>参与项目：杭州拱墅万达外立面中标方案与扩初图纸，银川万达酒店及写字楼扩初阶段图纸，镇江火车站北广场商业区该草方案，鹏欣水游城镇江项目方案，镇江国艺馆方案，南昌万达城展示中心方案。</p>
+</li>
+<li><p>负责项目：负责西宁海湖万达外立面中标项目方案与扩初。 </p>
+</li>
+</ul>
+<h5 id="2013年10月-2015年10月-CDG国际设计机构"><a href="#2013年10月-2015年10月-CDG国际设计机构" class="headerlink" title="2013年10月 - 2015年10月 - CDG国际设计机构"></a>2013年10月 - 2015年10月 - CDG国际设计机构</h5><p>职位：主创设计师</p>
+<ul>
+<li><p>主要负责住宅及旅游地产规划。</p>
+</li>
+<li><p>参与项目：北京银湖度假村设计方案，北京四号院别墅设计方案，合肥市土地储备中心科学院路城中村改项目，大理洱海生态城项目，中兴保利田村家属楼项目。中正·水岸明珠项目方案。</p>
+</li>
+<li><p>负责项目：鸡西白鱼塆兴凯湖国际休闲旅游度假区项目，曲靖一中方案，牡丹江市物流园项目。</p>
+</li>
+</ul>
+<h5 id="2016年4月-至今-北京清华同衡规划研设计究院有限公司"><a href="#2016年4月-至今-北京清华同衡规划研设计究院有限公司" class="headerlink" title="2016年4月 - 至今 - 北京清华同衡规划研设计究院有限公司"></a>2016年4月 - 至今 - 北京清华同衡规划研设计究院有限公司</h5><p>职位：主创设计师</p>
+<h4 id="毕业学校"><a href="#毕业学校" class="headerlink" title="毕业学校"></a>毕业学校</h4><ul>
+<li>同济大学 </li>
 </ul>
 
-<h4 id="毕业学校">毕业学校</h4>
-
-<ul>
-<li>同济大学</li>
-</ul>
-
-                            <div class="list">
-                                <h4>Recent Projects</h4>
-                                <ul>
-                                    <li><a href="/project/%E5%8C%97%E4%BA%AC%E7%AE%A1%E5%BA%84%E7%BB%BF%E9%9A%94%E4%BA%A7%E4%B8%9A%E5%9B%AD/">北京管庄绿隔产业园</a></li>
-                                    <li><a href="/project/%E5%90%88%E8%82%A5%E5%9B%BA%E9%95%87%E8%B7%AF%E4%B8%8E%E9%BB%84%E6%A1%82%E8%B7%AF%E4%BA%A4%E5%8F%A3%E5%9C%B0%E5%9D%97/">合肥固镇路与黄桂路交口地块</a></li>
-                                    <li><a href="/project/%E9%B8%A1%E8%A5%BF%E5%85%B4%E5%87%AF%E6%B9%96%E7%99%BD%E9%B1%BC%E6%B9%BE%E8%A7%84%E5%88%92/">鸡西兴凯湖白鱼湾规划</a></li>
-                                    <li><a href="/project/%E5%A4%A7%E7%90%86%E6%B4%B1%E6%B5%B7%E7%94%9F%E6%80%81%E5%9B%AD/">大理洱海生态园</a></li>
-                                    <li><a href="/project/%E5%B9%BF%E4%B8%9C%E7%95%AA%E7%A6%BA%E4%B8%87%E8%BE%BE/">广东番禺万达</a></li>
-                                </ul>
-                            </div>
-                            <div class="list">
-                                <h4>Recent Posts</h4>
-                                <ul>
-                                    <li><a href="/post/lua%E4%BD%9C%E5%9B%BE%E6%95%99%E7%A8%8B%E4%B9%8B%E5%B8%B8%E7%94%A8%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">Lua作图教程之设计模式</a></li>
-                                    <li><a href="/post/lua%E4%BD%9C%E5%9B%BE%E6%95%99%E7%A8%8B%E4%B9%8Blua%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">Lua作图教程之lua面向对象</a></li>
-                                    <li><a href="/post/lua%E4%BD%9C%E5%9B%BE%E6%95%99%E7%A8%8B%E4%B9%8B%E5%BC%80%E5%8F%91%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">Lua作图教程之开发调试环境搭建</a></li>
-                                    <li><a href="/post/lua%E4%BD%9C%E5%9B%BE%E6%95%99%E7%A8%8B%E4%B9%8Blua%E5%9F%BA%E7%A1%80/">Lua作图教程之lua基础</a></li>
-                                    <li><a href="/post/%E5%A5%87%E5%B9%BB%E6%95%85%E4%BA%8B%E9%87%8C%E7%9A%84%E6%B3%95%E5%8A%9B%E8%80%85%E4%BB%AC/">奇幻故事里的“法力者们”</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>        
-        </main>
-        <footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer--left-section">                
-                <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-mini-footer--social-btn social-btn" href="mailto:olossss@qq.com?subject=Hi">
-                    <i class="material-icons_lg icon ion-email"></i>
-                    <span class="visuallyhidden">Email</span>
-                </a>
-
             </div>
-            <div class="mdl-mini-footer--right-section">
-                <span>© 2015 徐超</span>
-            </div>
-        </footer>
-        <div class="mdl-layout__obfuscator"></div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://goblinlaboratory.win/about/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://goblinlaboratory.win/about/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
     </div>
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-
-
 </body>
-</html>
 
+
+
+ 	
+</html>
