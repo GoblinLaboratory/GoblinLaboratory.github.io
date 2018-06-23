@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    徐超的博客
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Xu Chao</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Architecture/">Architecture</a></li><li><a class="category-link" href="/categories/Game/">Game</a></li><li><a class="category-link" href="/categories/life/">life</a></li><li><a class="category-link" href="/categories/编程/">编程</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="开源项目">
+		                开源项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="建筑项目">
+		                建筑项目
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1874400990,430422044&amp;fm=27&amp;gp=0.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >魔兽争霸自动地图元件的绘制原理</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="序："><a href="#序：" class="headerlink" title="序："></a>序：</h2><p>本文主要介绍一种简单高效的自动地图元件的绘制方法，基本的原理是基于CodeProject的作者为Colin Vella的一篇文章：<a href="http://www.codeproject.com/KB/game/Autotiles_Algorithm.aspx#_comments" target="_blank" rel="noopener">http://www.codeproject.com/KB/game/Autotiles_Algorithm.aspx#_comments</a> 该文章介绍的方法非常简单，而且很高效。本文会先讲述此方法，然后在此方法的基础上，介绍魔兽争霸的自动地图元件的绘制原理，因为其实这2者的原理是一样的，但方法稍有不同。</p>
+<h2 id="1-基本原理"><a href="#1-基本原理" class="headerlink" title="1.基本原理"></a>1.基本原理</h2><p>对于自动地图元件，我们可以这样理解，它实际上是一种地形分割器，例如</p>
+<p>岸边 – 水和陆地的分割；</p>
+<p>墙壁 – 室内和室外的分割。</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_13267847546rNr.gif" alt="0_13267847546rNr"></p>
+<p>那么我们就可以用0和1分别来代表两种地形了，我们将一个tile分成4个角，每个角都可能是两种地形的其中一种（即可以是0，也可以是1）。</p>
+<p>这样我们用一个4位的数字b3b2b1b0表示一个tile，其中每一位表示一个角的地形，如下图</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_1326784757xGgo.gif" alt="0_1326784757xGgo"></p>
+<p>这样4个角总共有16种情况，分别是以下16种，如下图，我们将蓝色部分想象成水，黄色部分想象成陆地，而两者间的黑线想象成岸边</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_1326784760ypd7.gif" alt="0_1326784760ypd7"></p>
+<p>在实际绘制过程中，我们就是用这16种情况类拼接地图的。</p>
+<h2 id="2-自动地图元件的规格"><a href="#2-自动地图元件的规格" class="headerlink" title="2.自动地图元件的规格"></a>2.自动地图元件的规格</h2><p>上面图3就是此方法使用的地图元件的规格，注意此方法使用的自动地图元件的规则与RMXP的规格并不一样，在某种意义上说，RMXP的地图元件的精度要高一点，这点会在后续文章中给出分析。</p>
+<p>在图3中，我们故意将原件按其对应数字的大小来排序，也就是说0000排在第一，0001排在第二，1111排在最后。这样就可以很方便地根据tile的数值对应到其实际贴图了，用如下方法</p>
+<pre class=" language-c++"><code class="language-c++">
+int tileNumber = tileMap[row][col];  
+Rect srcRect(tileNumber * tileWidth, 0, tileWidth, tileHeight);  
+
+</code></pre>
+<h2 id="3-绘制算法"><a href="#3-绘制算法" class="headerlink" title="3.绘制算法"></a>3.绘制算法</h2><p>绘制的算法非常简单，反而是原文讲得比较绕口。如下图，我们打算在位置4绘制地图元件，此时我们只需将位置4以及它周围共16个小格填为1即可。如下图：</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_13267847639mRK.gif" alt="0_13267847639mRK"></p>
+<p>注意一点，我们只是将上图红色方框内的16个小格填为1而已，并不改动方框外的格的内容。例如左上角，我们假设其当前值是0110，那么改动后变成1110。</p>
+<p>算法要注意的地方是，在地图的边缘时，要考虑绘制位置的旁边是否有tile，例如在（0,0）位置绘制时，0,1,2,3,6格子都是不存在的。</p>
+<p>绘制的代码如下：r，c分别代表要绘制的行和列号，easyMap是二维数组，保存了所有tile。MAPROW和MAPCOL分别是地图的行数和列数。</p>
+<pre class=" language-c++"><code class="language-c++">// 将中心点周围的16个小格填为1  
+
+if (r > 0)  
+{  
+    if (c > 0) easyMap[r - 1][c - 1] |= 0x8;    // 1000  
+    easyMap[r - 1][c] |= 0xC;   // 1100  
+    if (c < MAPCOL - 1) easyMap[r - 1][c + 1] |= 0x4;   // 0100  
+}  
+
+if (c > 0) easyMap[r][c - 1] |= 0xA;    // 1010  
+easyMap[r][c] |= 0xF;   // 1111  
+if (c < MAPCOL - 1) easyMap[r][c + 1] |= 0x5;   // 0101  
+
+if (r < MAPROW - 1)  
+{  
+    if (c > 0) easyMap[r + 1][c - 1] |= 0x2;    // 0010  
+    easyMap[r + 1][c] |= 0x3;   // 0011  
+    if (c < MAPCOL - 1) easyMap[r + 1][c + 1] |= 0x1;   // 0001  
+}  
+</code></pre>
+<p>消除的过程是绘制的反过程，也就是将填为1的16个小格填为0即可</p>
+<pre class=" language-c++"><code class="language-c++">// 将中心点周围的16个小格填为0  
+
+if (r > 0)  
+{  
+    if (c > 0) easyMap[r - 1][c - 1] &= ~0x8;   // 0111  
+    easyMap[r - 1][c] &= ~0xC;  // 0011  
+    if (c < MAPCOL - 1) easyMap[r - 1][c + 1] &= ~0x4;  // 1011  
+}  
+
+if (c > 0) easyMap[r][c - 1] &= ~0xA;   // 0101  
+easyMap[r][c] &= ~0xF;  // 0000  
+if (c < MAPCOL - 1) easyMap[r][c + 1] &= ~0x5;   // 1010  
+
+if (r < MAPROW - 1)  
+{  
+    if (c > 0) easyMap[r + 1][c - 1] &= ~0x2;   // 1101  
+    easyMap[r + 1][c] &= ~0x3;  // 1100  
+    if (c < MAPCOL - 1) easyMap[r + 1][c + 1] &= ~0x1;   // 1110  
+}  
+</code></pre>
+<h2 id="4-魔兽争霸的自动地图绘制"><a href="#4-魔兽争霸的自动地图绘制" class="headerlink" title="4.魔兽争霸的自动地图绘制"></a>4.魔兽争霸的自动地图绘制</h2><p>如果你没用过魔兽争霸的地图编辑器，那么你可以在魔兽争霸的游戏目录下找到它，World Editor.exe</p>
+<p>打开它默认出现的就是编辑地形的模式，可以看到它的地形编辑与RMXP的不同是，它是以顶点来定位的，而不是RMXP的以tile来定位的。如下图</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_1326784772q025.gif" alt="0_1326784772q025"></p>
+<p>要绘制出魔兽争霸的地图编辑器的效果，用上面的算法即可，不过需稍作修改。如下图，我们打算在中心顶点位置绘制地图元件，此时我们只需将该顶点附近4个小格填为1即可，也就是将下图红色方框内的小格填为1。</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_1326784774aJmu.gif" alt="0_1326784774aJmu"></p>
+<h2 id="5-共性"><a href="#5-共性" class="headerlink" title="5.共性"></a>5.共性</h2><p>我们将魔兽争霸地图编辑器的绘制形状改为正方形，尺寸改为2，如下图</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_1326784777o3bn.gif" alt="0_1326784777o3bn"></p>
+<p>6.实现</p>
+<p>下面是程序的截图</p>
+<p><img src="/2017/05/26/魔兽争霸自动地图元件的绘制原理/0_1326784766QY84.gif" alt="0_1326784766QY84"></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://goblinlaboratory.win/2017/05/26/魔兽争霸自动地图元件的绘制原理/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://goblinlaboratory.win/2017/05/26/魔兽争霸自动地图元件的绘制原理/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
