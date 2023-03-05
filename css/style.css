@@ -2,7 +2,7 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Vollkorn', serif;
-	background:url(../images/banner.jpg) no-repeat;
+	background:url(../metronic/assets/pages/img/banner.jpg) no-repeat;
 	background-size:100% 100%;
  }
 body a{
