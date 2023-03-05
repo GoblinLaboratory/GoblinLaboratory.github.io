@@ -105,14 +105,14 @@ div#banner-top h1 {
     font-family: 'Abril Fatface', cursive;
 }
 div#banner-top h1 span.left-icon {
-  background: url(../images/left.png) no-repeat 0px 15px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 15px;
   width: 204px;
   height: 80px;
   display: block;
   float: left;
 }
 div#banner-top h1 span.right-icon {
-  background: url(../images/right.png) no-repeat 0px 15px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 15px;
   width: 204px;
   height: 80px;
   display: block;
@@ -126,14 +126,14 @@ div#banner-top h2 {
    color:#000;
 }
 div#banner-top h2 span.left-icon {
-  background: url(../images/left.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
   float: left;
 }
 div#banner-top h2 span.right-icon {
-  background: url(../images/right.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
@@ -204,14 +204,14 @@ div#banner-top h2 span.right-icon {
   color: #000;
 }
 .work h3 span.left-icon {
-  background: url(../images/left.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
   float: left;
 }
 .work h3 span.right-icon {
-  background: url(../images/right.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
@@ -480,14 +480,14 @@ div#portfoliolist {
   font-size: 1.3em;
 }
 .about h3 span.left-icon {
-  background: url(../images/left.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
   float: left;
 }
 .about h3 span.right-icon {
-  background: url(../images/right.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
@@ -569,14 +569,14 @@ div#portfoliolist {
     font-size: 1.3em;
 }
 .contact h3 span.left-icon {
-  background: url(../images/left.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
   float: left;
 }
 .contact h3 span.right-icon {
-  background: url(../images/right.png) no-repeat 0px 10px;
+  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 10px;
   width: 204px;
   height: 50px;
   display: block;
@@ -671,12 +671,12 @@ input[type="submit"]:hover {
 	  padding-top: 4em;
 	}
 	div#banner-top h1 span.left-icon {
-	  background: url(../images/left.png) no-repeat 0px 3px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 3px;
 	  width: 200px;
 	  height: 59px;
 	}
 	div#banner-top h1 span.right-icon {
-	  background: url(../images/right.png) no-repeat 0px 6px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 6px;
 	  width: 223px;
 	  height: 58px;
 	}
@@ -686,12 +686,12 @@ input[type="submit"]:hover {
 	  margin: 2% auto;
 	}
 	div#banner-top h2 span.left-icon {
-	  background: url(../images/left.png) no-repeat 0px 0px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 0px;
 	  width: 202px;
 	  height: 34px;
 	}
 	div#banner-top h2 span.right-icon {
-	  background: url(../images/right.png) no-repeat 0px 0px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 0px;
 	  width: 241px;
 	  height: 31px;
 	}
@@ -726,13 +726,13 @@ input[type="submit"]:hover {
 }
 @media (max-width: 768px){
 	div#banner-top h1 span.left-icon {
-	  background: url(../images/left.png) no-repeat 27px -1px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 27px -1px;
 	  width: 174px;
 	  height: 53px;
 	  background-size: 150px;
 	}
 	div#banner-top h1 span.right-icon {
-	   background: url(../images/right.png) no-repeat 0px 0px;
+	   background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 0px;
 	  width: 174px;
 	  height: 53px;
 	  background-size: 150px;
@@ -748,7 +748,7 @@ input[type="submit"]:hover {
 	  margin: 1% auto;
 	}
 	div#banner-top h2 span.left-icon {
-	  background: url(../images/left.png) no-repeat 0px -6px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px -6px;
 	  width: 202px;
 	  height: 34px;
 	}
@@ -779,12 +779,12 @@ input[type="submit"]:hover {
 	  width: 82%;
 	}
 	.work h3 span.left-icon {
-	  background: url(../images/left.png) no-repeat 0px 0px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 0px;
 	  width: 204px;
 	  height: 35px;
 	}
 	.work h3 span.right-icon {
-	  background: url(../images/right.png) no-repeat 0px 3px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 3px;
 	  width: 204px;
 	  height: 35px;
 	}
@@ -800,12 +800,12 @@ input[type="submit"]:hover {
 	  width: 78%;
 	}
 	.about h3 span.left-icon {
-	  background: url(../images/left.png) no-repeat 0px 1px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px 1px;
 	  width: 204px;
 	  height: 41px;
 	}
 	.about h3 span.right-icon {
-	  background: url(../images/right.png) no-repeat 0px 6px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 6px;
 	  width: 204px;
 	  height: 39px;
 	}
@@ -944,11 +944,11 @@ input[type="submit"]:hover {
 	  margin: 2% auto 0;
 	}
 	.contact h3 span.left-icon {
-	  background: url(../images/left.png) no-repeat 0px -1px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat 0px -1px;
 	  height: 37px;
 	}
 	.contact h3 span.right-icon {
-	  background: url(../images/right.png) no-repeat 0px 4px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/right.png) no-repeat 0px 4px;
 	  height: 38px;
 	}
 	ul.form li {
@@ -1203,7 +1203,7 @@ input[type="submit"]:hover {
 }
 @media (max-width: 320px){
 	div#banner-top h1 span.left-icon {
-	  background: url(../images/left.png) no-repeat -4px 3px;
+	  background: url(https://glaboratory.top/metronic/assets/pages/img/left.png) no-repeat -4px 3px;
 	  width: 46px;
 	  background-size: 50px;
 	  height: 26px;
