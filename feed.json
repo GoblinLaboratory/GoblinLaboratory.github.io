@@ -1,0 +1,41 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "青旗预设",
+    "description": "",
+    "home_page_url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview",
+    "feed_url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/feed.json",
+    "user_comment": "",
+    "icon": "file:///G:/Blog/Publii/sities/qing-qi-yu-she/preview/media/website/BaiduShurufa_2021-3-16_23-49-41.png",
+    "author": {
+        "name": "青旗"
+    },
+    "items": [
+        {
+            "id": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/enscape.html",
+            "url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/enscape.html",
+            "title": "enscape",
+            "content_html": "\n  <p>\n    \n  </p>",
+            "author": {
+                "name": "青旗"
+            },
+            "tags": [
+                   "Enscape"
+            ],
+            "date_published": "2024-03-10T19:00:03+08:00",
+            "date_modified": "2024-03-10T19:00:34+08:00"
+        },
+        {
+            "id": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/lumion.html",
+            "url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/lumion.html",
+            "title": "lumion",
+            "author": {
+                "name": "青旗"
+            },
+            "tags": [
+                   "Lumion"
+            ],
+            "date_published": "2024-03-10T18:59:52+08:00",
+            "date_modified": "2024-03-10T18:59:52+08:00"
+        }
+    ]
+}
