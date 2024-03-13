@@ -2,19 +2,35 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "青旗预设",
     "description": "",
-    "home_page_url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview",
-    "feed_url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/feed.json",
+    "home_page_url": "http://cyanflag.top",
+    "feed_url": "http://cyanflag.top/feed.json",
     "user_comment": "",
-    "icon": "file:///G:/Blog/Publii/sities/qing-qi-yu-she/preview/media/website/BaiduShurufa_2021-3-16_23-49-41.png",
+    "icon": "http://cyanflag.top/media/website/BaiduShurufa_2021-3-16_23-49-41.png",
     "author": {
         "name": "青旗"
     },
     "items": [
         {
-            "id": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/enscape.html",
-            "url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/enscape.html",
+            "id": "http://cyanflag.top/hello-world.html",
+            "url": "http://cyanflag.top/hello-world.html",
+            "title": "Hello World",
+            "summary": "Hello World 测试页面",
+            "content_html": "\n  <p>\n    Hello World\n  </p>\n\n  <p>\n    测试页面\n  </p>",
+            "image": "http://cyanflag.top/media/posts/4/wallhaven-0p2rye.jpg",
+            "author": {
+                "name": "青旗"
+            },
+            "tags": [
+            ],
+            "date_published": "2024-03-13T20:16:43+08:00",
+            "date_modified": "2024-03-13T20:16:43+08:00"
+        },
+        {
+            "id": "http://cyanflag.top/enscape.html",
+            "url": "http://cyanflag.top/enscape.html",
             "title": "enscape",
             "content_html": "\n  <p>\n    \n  </p>",
+            "image": "http://cyanflag.top/media/posts/2/26-Xiao-Guo-Tu255Tu_JRJing-Rui-Jing-Guan-Shou-Ji_Hua-Ban-Jian-Zhu-She-Ji-609088189.jpg",
             "author": {
                 "name": "青旗"
             },
@@ -22,12 +38,13 @@
                    "Enscape"
             ],
             "date_published": "2024-03-10T19:00:03+08:00",
-            "date_modified": "2024-03-10T19:00:34+08:00"
+            "date_modified": "2024-03-13T20:17:03+08:00"
         },
         {
-            "id": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/lumion.html",
-            "url": "file:///G:\Blog\Publii\sities\qing-qi-yu-she\preview/lumion.html",
+            "id": "http://cyanflag.top/lumion.html",
+            "url": "http://cyanflag.top/lumion.html",
             "title": "lumion",
+            "image": "http://cyanflag.top/media/posts/1/26-Xiao-Guo-Tu255Tu_JRJing-Rui-Jing-Guan-Shou-Ji_Hua-Ban-Jian-Zhu-She-Ji-609089246.jpg",
             "author": {
                 "name": "青旗"
             },
@@ -35,7 +52,7 @@
                    "Lumion"
             ],
             "date_published": "2024-03-10T18:59:52+08:00",
-            "date_modified": "2024-03-10T18:59:52+08:00"
+            "date_modified": "2024-03-13T20:17:13+08:00"
         }
     ]
 }
